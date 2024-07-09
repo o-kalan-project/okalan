@@ -237,7 +237,7 @@ var styleTag = document.createElement('style');
 }
 
 .slowzoom{
-  animation: slowzoomIn 2.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: slowzoomIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes slowzoomIn {
