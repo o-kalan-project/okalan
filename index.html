@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>応歌ラン(仮)</title>
+    <body style='padding:0px;margin:0px;min-width:auto;'>
+        <script src='/static/js-library/e-anitor.js'></script>
+        <script>
+        document.fonts.ready.then(async function(fontFaceSet) {
+            //自作のライブラリは最強だ!
+            _animation();
+            _appfont('/static/keifont.ttf','keifont');
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            _text('応歌ランの公式ページ(仮)です');
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            document.getElementById("text").innerHTML+='<div style="text-align: center;"class="box2"><a href="/static/updatelog.html" style="color: rgb(255, 255, 255); background-color: pink; font-family: keifont; font-size: 50px;">年表</a></div>'
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            _nodebr();
+            await _sleep(100);
+            await _freetext('h1','ニコ動が落ちてから','a','keifont','30px','pink','middle','popup','0');
+            await _sleep(100);
+            _freetext('h1','Loading……','id','keifont','30px','pink','middle','popup','0');
+            NicovideoDown = new Date('2024/06/08 06:00:00');
+            setInterval(() => {
+                da=new Date(Date.now() + ((new Date().getTimezoneOffset() + (540)) * 60 * 1000))
+                y=da.getFullYear().toString();
+                m=da.getMonth()+1
+                m=m.toString();
+                d=da.getDate().toString();
+                h=da.getHours().toString();
+                mo=da.getMinutes().toString();
+                s=da.getSeconds().toString();
+                if(m.length==1){m='0'+m}
+                if(d.length==1){d='0'+d}
+                if(h.length==1){h='0'+h}
+                if(mo.length==1){mo='0'+mo}
+                if(s.length==1){s='0'+s}
+                dat1 =new Date(y+'/'+m+'/'+d+' '+h+':'+mo+':'+s)
+                diff = dat1.getTime() - NicovideoDown.getTime();
+                diff=diff/1000
+                min=Math.floor(diff/60);
+                hou=Math.floor(min/60);
+                day=Math.floor(hou/24)
+
+                document.getElementById('id').textContent=day+'日'+hou%24+'時間'+min%60+'分'+diff%60+'秒'
+
+            },1000)
+        });
+        //<a href="" style="color: #fff;background-color: #eb6100;">PUSH</a>
+        </script>
+        <div>
+            <div id='text'></div>
+            <div align="right" style='margin-top:-300px'>
+                <figure><img class='zoom'id='img'src='/static/tatie.PNG' style="width:50%;height:50%;"></figure>
+            </div>
+        </div>
+        <header>
+            <a href="/"><img src='/static/logo.PNG' width='50%' height='50%' id='nop'></a>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="/static/character.html"id='olan2'style="color:pink;">当キャラクターについて</a></li>
+                    <li><a href="/static/kiyaku.html"id='olan2'style="color:pink;">利用規約</a></li>
+                    <li><a href="/static/utau.html"id='olan2'style="color:pink;">UTAU</a></li>
+                    <li><a href="/static/updatelog.html"id='olan2'style="color:pink;">アップデート記録</a>
+                </ul>
+            </nav>
+        </header>
+        <!--img src='/static/logo.PNG' width='30%' height='30%'><!-->
+        <style>
+            figure {
+	            float: right;
+	            margin: 100px auto auto auto;
+	            width: 70%;
+            }
+            body {
+                background-color:#004d25;
+            }
+            a {
+                text-decoration: none;
+            }
+            header {
+                padding: 30px 4% 10px;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                height:50px;
+            }
+            h2 {
+                display: block;
+                border: 0;
+                padding: 0;
+                margin: 0;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                display: flex;
+            }
+            li {
+                margin: 0 0 0 15px;
+                font-size: 14px;
+            }
+            nav {
+                margin: 0 0 0 auto;
+                padding-right:100px;
+                z-index:-1;
+            }
+            #olan2{
+                font-size:20px;
+                font-weight: 5;
+                color:pink;
+                font-family: "keifont";
+            }
+            #nop {
+                display: block;
+                border: 0;
+                padding: 0;
+                margin: 0;
+                margin-top:0;
+                width: 260px;
+                z-index:calc(infinity);
+            }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>応歌ラン(仮)</title>
+    <body style='padding:0px;margin:0px;min-width:auto;'>
+        <script src='/static/js-library/e-anitor.js'></script>
+        <script>
+        document.fonts.ready.then(async function(fontFaceSet) {
+            //自作のライブラリは最強だ!
+            _animation();
+            _appfont('/static/keifont.ttf','keifont');
+        });
+        //<a href="" style="color: #fff;background-color: #eb6100;">PUSH</a>
+        </script>
+
+        <header>
+            <a href="/"><img src='/static/logo.PNG' width='50%' height='50%' id='nop'></a>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="/static/character.html"id='olan2'style="color:pink;">当キャラクターについて</a></li>
+                    <li><a href="/static/kiyaku.html"id='olan2'style="color:pink;">利用規約</a></li>
+                    <li><a href="/static/utau.html"id='olan2'style="color:pink;">UTAU</a></li>
+                    <li><a href="/static/updatelog.html"id='olan2'style="color:pink;">アップデート記録</a>
+                </ul>
+            </nav>
+        </header>
+        <div id='text'><br><br><br><br><h1 class="popup" id="a" style="color: pink; font-family: keifont; font-size: 30px; font-weight: 50; text-align: center; position: relative;">アップデート履歴・歴史</h1><br></div>
+        <div id='dl' style='position:absolute;left:20%;'>
+            <h1>年表</h1>
+            <dl id='los'>
+                <dt style='font-size:30px;color:white'>2024.6.8</dt><dd><h2 style='font-size:25px;font-weight:5;'>応歌ラン・にこファンちゃんのDiscordが開設される</h2></dd>
+                <dt style='font-size:30px;color:white'>2024.6.18</dt><dd><h2 style='font-size:25px;font-weight:5;'>応歌ランの設定が決まる</h2></dd>
+                <dt style='font-size:30px;color:white'>2024.6.25</dt><dd><h2 style='font-size:25px;font-weight:5;'>応歌ランの名前が決まる</h2></dd>
+                <dt style='font-size:30px;color:white'>2024.6.18</dt><dd><h2 style='font-size:25px;font-weight:5;'>応歌ランの設定が決まる</h2></dd>
+            </dl>
+        </div>
+        <ul id="timeline"></ul>
+        <!--img src='/static/logo.PNG' width='30%' height='30%'><!-->
+        <style>
+            figure {
+	            float: right;
+	            margin: 100px auto auto auto;
+	            width: 70%;
+            }
+            body {
+                background-color:#004d25;
+            }
+            a {
+                text-decoration: none;
+            }
+            header {
+                padding: 30px 4% 10px;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                height:50px;
+                z-index:calc(infinity);
+            }
+            h2 {
+                display: block;
+                border: 0;
+                padding: 0;
+                margin: 0;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                display: flex;
+            }
+            li {
+                margin: 0 0 0 15px;
+                font-size: 14px;
+            }
+            nav {
+                margin: 0 0 0 auto;
+                padding-right:100px;
+                z-index:-1;
+            }
+            #olan2{
+                font-size:20px;
+                font-weight: 5;
+                color:pink;
+                font-family: "keifont";
+            }
+            #nop {
+                display: block;
+                border: 0;
+                padding: 0;
+                margin: 0;
+                margin-top:0;
+                width: 260px;
+                z-index:calc(infinity);
+            }
+            #dl{
+                font-family:'keifont';
+                color:pink;
+                font-weight:5
+            }
+        </style>
+    </body>
+</html>

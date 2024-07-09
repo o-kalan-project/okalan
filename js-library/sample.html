@@ -1,0 +1,46 @@
+<head>
+    <title>e-anitor.jsライブラリのアニメーションのサンプル</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="Cache-Control" content="no-cache">
+</head>
+<body>
+<script src='/static/js-library/e-anitor.js?ver=2'></script>
+<script>
+window.onload = async function() {
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.location.reload(true) // 追加
+        }});
+    _animation();
+    _appfont('/static/keifont.ttf','keifont');
+    await _sleep(1000);
+    _freetext('h1','popup','a','keifont','30px','pink','middle','popup');
+    await _sleep(1000)
+    _freetext('h1','fadein','a','keifont','30px','pink','middle','fadein');
+    await _sleep(1000)
+    _freetext('h1','Rslidein','a','keifont','30px','pink','middle','Rslidein');
+    await _sleep(1000)
+    _freetext('h1','Lslidein','a','keifont','30px','pink','middle','Lslidein');
+    await _sleep(1000)
+    _freetext('h1','Uslidein','a','keifont','30px','pink','middle','Uslidein');
+    await _sleep(1000)
+    _freetext('h1','Dslidein','a','keifont','30px','pink','middle','Dslidein');
+    await _sleep(1000)
+    _freetext('h1','Rpslidein','a','keifont','30px','pink','middle','Rpslidein');
+    await _sleep(1000)
+    _freetext('h1','Lpslidein','a','keifont','30px','pink','middle','Lpslidein');
+    await _sleep(1000)
+    _freetext('h1','zoom','a','keifont','30px','pink','middle','zoom');//RUdiagonal
+    await _sleep(1000)
+    _freetext('h1','RDdiagonal','a','keifont','30px','pink','middle','RDdiagonal');
+    await _sleep(1000)
+    _freetext('h1','RUdiagonal','a','keifont','30px','pink','middle','RUdiagonal');//
+    await _sleep(1000)
+    _freetext('h1','LDdiagonal','a','keifont','30px','pink','middle','LDdiagonal');
+    await _sleep(1000)
+    _freetext('h1','LUdiagonal','a','keifont','30px','pink','middle','LUdiagonal');
+}
+</script>
+<div id='text'></div>
+</body>
