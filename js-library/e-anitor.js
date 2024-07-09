@@ -14,7 +14,7 @@ function _appfont(pass,family){
     document.head.appendChild(styleTag);
 }
 function _makechart(where,title,index,animation){
-	_id(where).innerHTML+="<dt style='font-size:30px;color:white'class="+animation+">"+title+"</dt><dd><h2 style='font-size:25px;font-weight:5;'>"+index+"</h2></dd>"
+	_id(where).innerHTML+="<div class="+animation+"><dt style='font-size:30px;color:white'>"+title+"</dt><dd><h2 style='font-size:25px;font-weight:5;'>"+index+"</h2></dd></div>"
 }
 //_text('test');
 function _text(index){
