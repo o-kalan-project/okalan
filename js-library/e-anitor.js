@@ -13,6 +13,9 @@ function _appfont(pass,family){
                 `;
     document.head.appendChild(styleTag);
 }
+function _makechart(where,title,index){
+	_id(where).innerHTML+="<dt style='font-size:30px;color:white'>2024.6.8</dt><dd><h2 style='font-size:25px;font-weight:5;'>応歌ラン・にこファンちゃんのDiscordが開設される</h2></dd>"
+}
 //_text('test');
 function _text(index){
     var textTag = document.createElement('h1');
