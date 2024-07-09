@@ -13,13 +13,6 @@ function _appfont(pass,family){
                 `;
     document.head.appendChild(styleTag);
 }
-var i=0;
-function _makechart(dl,index,size,color,line,linepx,pos){
-    //_id(dl).innerHTML+="<p id='ka'style='font-size:""size""'>"+index+"</p>"
-    qa=document.createElement('p')
-    //<dt style='font-size:30px'>1990年11月</dt><dd><h2 style='font-size:25px'>pinopino</h2><p style='font-size:20px'>ahoaho</p></dd>
-    document.getElementById(dl).appendChild(qa);
-}
 //_text('test');
 function _text(index){
     var textTag = document.createElement('h1');
