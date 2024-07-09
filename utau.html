@@ -21,13 +21,14 @@
         <script>
             document.fonts.ready.then(async function(fontFaceSet) {
                 _animation();
+                await _freetext('h1','UTAUの配布場所です。','a','keifont','30px','pink','middle','popup','0');
+                await _sleep(100)
+                await _freetext('h1','まだUTAUは完成していません!乞うご期待!!','a','keifont','30px','red','middle','popup','0');
             });
         </script>
         <!--img src='/okalan/logo.PNG' width='30%' height='30%'><!-->
         <h1 id='olan'>どうもみなさんこんにちは!<br><br></h1>
-        <a href='/okalan/kiyaku.docx' id='olan2'>UTAUの配布場です。</a>
         <div class="loading"></div>
-        <p>#004d25</p>
         <style>
             body {
                 background-color:#004d25;
