@@ -235,6 +235,22 @@ var styleTag = document.createElement('style');
     transform: scale(1);
   }
 }
+
+.slowzoom{
+  animation: slowzoomIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes slowzoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .RDdiagonal{
   animation: rdslide 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
