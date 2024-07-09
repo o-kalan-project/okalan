@@ -4,30 +4,30 @@
 
 * _sleep(ミリ秒)
   
-  指定したミリ秒だけ待つ(await必須)
+      指定したミリ秒だけ待つ(await必須)
   
 * _id(id)
   
-document.getElementById(id)の短縮形
+      document.getElementById(id)の短縮形
 
 * _class(className)
   
-getElementsByClassName(className)の短縮形
+      getElementsByClassName(className)の短縮形
 
 * _tag(tagName)
   
-getElementsByTagName(tagName)の短縮形
+      getElementsByTagName(tagName)の短縮形
 
 * _appfont(ttfファイルのURL,font-family)
   
-font-familyにttfファイルを登録して使えるようにする
+      font-familyにttfファイルを登録して使えるようにする
 
 * _text(内容)
   
-ピンク色でkeifont,のテキスト表示(簡易版)
+      ピンク色でkeifont,のテキスト表示(簡易版)
 
 *  _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
   
-自由度の高いテキストを表示(自動改行付き)
+      自由度の高いテキストを表示(自動改行付き)
 
-*tag:htmlタグ*
+      *tag:htmlタグ*
