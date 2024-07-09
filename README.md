@@ -29,5 +29,5 @@
 #  _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
   
       自由度の高いテキストを表示(自動改行付き)
-
-      _tag:htmlタグ_
+      
+      #tag:htmlタグ
