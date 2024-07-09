@@ -3,6 +3,7 @@
 ## 独自ライブラリ(e-anitor.js)の使い方
 
 [アニメーション一覧](https://o-kalan-project.github.io/okalan/js-library/sample.html)
+わかると思いますがclassでアニメーション指定します。
 
 #  _animation()
 
@@ -68,6 +69,6 @@
 
 >divのIDがtextのところに<br>を挿入する
 
+#await _makechart('ID','タイトル','内容',アニメーション');
 
-
-
+> 指定したIDのところにタイトル、内容の年表を生成する。アニメーション指定可
