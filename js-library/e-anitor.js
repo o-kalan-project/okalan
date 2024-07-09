@@ -448,7 +448,7 @@ dl dd h2 {
   margin: 0 0 5px;
 }
 
-#loading {
+.loading {
   color: #ff0000;
   font-size: 90px;
   text-indent: -9999em;
