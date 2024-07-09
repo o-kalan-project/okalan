@@ -2,6 +2,10 @@
 
 [アニメーション一覧](https://o-kalan-project.github.io/okalan/js-library/sample.html)
 
+#  _animation()
+
+>アニメーションを有効化
+
 # _sleep(ミリ秒)
   
 >指定したミリ秒だけ待つ(await必須)
@@ -31,10 +35,33 @@
 >自由度の高いテキストを表示(自動改行付き)
 >
 >  tag:htmlタグ
+>
 >  index:内容
+>
 >  id: id
+>
 >  font:フォントファミリーの名前を指定
+>
 >  size文字の大きさの設定
+>
 >  color:文字色
+>
 >  pos: middle(中央),right(右よせ),もしくは%,pxで左からの位置を指定
+>
 >  animation:[アニメーション一覧](https://o-kalan-project.github.io/okalan/js-library/sample.html)で表示されている種類が使用できます。
+>
+>  delay:自動改行の時の出現間隔
+>
+>  where:どこに文字を表示するか(divのIDを指定)
+>
+#  _nobrtext(tag,index,id,font,size,color,pos,animation,delay,where)
+
+>上と同じだが、自動改行がない。
+
+#  _br(where)
+
+>whereで指定したdivのIDの1番下に<br>を挿入する
+
+#  _nodebr()
+
+>divのIDがtextのところに<br>を挿入する
