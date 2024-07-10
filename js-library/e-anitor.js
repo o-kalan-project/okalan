@@ -40,7 +40,7 @@ function _text2(index){
 // _freetext('h1','freetext','id','keifont','30px','pink','middle','popup','1','body');
 async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where){
     var flug=false;
-    console.log(windows.outerWidth)
+    console.log(window.outerWidth)
     if(window.outerWidth>=481){
     	var q =window.outerWidth/size.slice(0,-2);
     }else{
