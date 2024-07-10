@@ -49,7 +49,11 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
         textTag = document.createElement(tag);
         textTag.style.color=color;
         textTag.style.fontFamily=font;
-        textTag.style.fontSize=size;
+	if(window.outerWidth>=481){
+        	textTag.style.fontSize=size;
+	}else{
+		textTag.style.fontSize=size/2;
+	}
         textTag.style.fontWeight=50;
         if(pos=='middle'){textTag.style.textAlign='center';}
         if(pos=='right'){textTag.style.textAlign+='right';}
