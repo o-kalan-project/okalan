@@ -2,6 +2,7 @@ Githubでは保存してから実際に機能し始めるまでに時間がか�
 [ここ](https://github.com/o-kalan-project/okalan/deployments)で新しく「Update OO」が追加されたら更新されます。
 
 #[GitHubバージョン](https://o-kalan-project.github.io/okalan/index.html)
+#[ここでライブラリの実験をすることができます](https://o-kalan-project.github.io/okalan/anycode.html)
 
 ## 独自ライブラリ(e-anitor.js)の使い方
 
