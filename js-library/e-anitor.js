@@ -16,6 +16,12 @@ function _appfont(pass,family){
 function _makechart(where,title,index,animation){
 	_id(where).innerHTML+="<dt style='font-size:30px;color:white'class="+animation+">"+title+"</dt><dd><h2 style='font-size:25px;font-weight:5;'class="+animation+">"+index+"</h2></dd>"
 }
+function _footer(index,color){
+	footer=document.createElement("footer");
+	footer.backgroundColor=color;
+	footer.textContent="© 2024 桜花爛漫 All rights reserved.";
+	document.body.appendChild(footer);
+}  		   
 //_text('test');
 function _text(index){
     var textTag = document.createElement('h1');
@@ -529,7 +535,12 @@ dl dd h2 {
   }
 }
 
-
+footer {
+  	width: 100%;
+  	height: 12px; 
+  	text-align: center;
+  	padding: 30px 0;
+}
 `;
     document.head.appendChild(styleTag);
 };
