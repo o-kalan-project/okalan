@@ -10,8 +10,14 @@
         <script>
           _animation();
           _appfont('./keifont.ttf','keifont');
-          _freetext('a','当キャラクターについて','a','keifont','30px','pink','middle','popup','0');
         </script>
-        <div id="text"></div>
+        <div id="text">
+            document.body.innerHTML+='<div style="text-align: center;" class="box2"><a href="./updatelog.html" style="color: rgb(255, 255, 255); background-color: pink; font-family: keifont; font-size: 50px;">当キャラクターについて</a></div>'
+        </div>
+        <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
     </body>
 </html>
