@@ -18,7 +18,7 @@ function _makechart(where,title,index,animation){
 }
 function _footer(index,color){
 	footer=document.createElement("footer");
-	footer.backgroundColor=color;
+	footer.style.backgroundColor=color;
 	footer.textContent=index;
 	document.body.appendChild(footer);
 }  		   
