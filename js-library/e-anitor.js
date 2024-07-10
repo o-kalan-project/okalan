@@ -52,7 +52,7 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
 	if(window.outerWidth>=481){
         	textTag.style.fontSize=size;
 	}else{
-		textTag.style.fontSize=size.lice(0,-2)/2+"px";
+		textTag.style.fontSize=size.slice(0,-2)/2+"px";
 	}
         textTag.style.fontWeight=50;
         if(pos=='middle'){textTag.style.textAlign='center';}
