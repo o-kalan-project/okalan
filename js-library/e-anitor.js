@@ -40,7 +40,11 @@ function _text2(index){
 // _freetext('h1','freetext','id','keifont','30px','pink','middle','popup','1','body');
 async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where){
     var flug=false;
-    var q =document.body.clientWidth/size.slice(0,-2);
+    if(window.outerWidth>=481){
+    	var q =document.body.outerWidth/size.slice(0,-2);
+    }else{
+	var q =document.body.outerWidth/size.slice(0,-2)*2;
+    }
     var count=Math.floor(q);
     var r=new RegExp(".{1,"+count+"}","g")
     var k=index.match(r);
@@ -52,16 +56,16 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
         textTag.style.fontWeight=50;
 	if(window.outerWidth>=481){
         	textTag.style.fontSize=size;
-		if(pos=='middle'){textTag.style.textAlign='center';}
-        	if(pos=='right'){textTag.style.textAlign+='right';}
-        	if(pos!='middle'||pos!='right'){
-            		textTag.style.position='relative';
-            		textTag.style.left=pos+'px';
         	}
 	}else{
 		textTag.style.fontSize=size.slice(0,-2)/2+"px";
 	}
-        
+	if(pos=='middle'){textTag.style.textAlign='center';}
+        if(pos=='right'){textTag.style.textAlign+='right';}
+        if(pos!='middle'||pos!='right'){
+            	textTag.style.position='relative';
+            	textTag.style.left=pos+'px';
+	}
         if(animation != null){textTag.className+=animation;}
         textTag.id=id
         ina=k[i].replace((' '),('&emsp;'));
