@@ -82,7 +82,11 @@ async function _nobrtext(tag,index,id,font,size,color,pos,animation,delay,where)
     textTag = document.createElement(tag);
     textTag.style.color=color;
     textTag.style.fontFamily=font;
-    textTag.style.fontSize=size.slice(0,-2)/1.5+"px";
+    if(window.outerWidth>=481){
+    	textTag.style.fontSize=size.slice(0,-2)/1.5+"px";
+    }else{
+    	textTag.style.fontSize=size;
+    }
     textTag.style.fontWeight=50;
     if(pos=='middle'){textTag.style.textAlign='center';}
     if(pos=='right'){textTag.style.textAlign+='right';}
