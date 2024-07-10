@@ -5,7 +5,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body>
-<script src='/okalan/js-library/e-anitor.js?ver=2'></script>
+<script src='./js-library/e-anitor.js?ver=2'></script>
 <script>
 window.onload = async function() {
     window.addEventListener('pageshow', function(event) {
@@ -13,7 +13,7 @@ window.onload = async function() {
             window.location.reload(true) // 追加
         }});
     _animation();
-    _appfont('/okalan/keifont.ttf','keifont');
+    _appfont('./keifont.ttf','keifont');
     await _sleep(1000);
     _freetext('h1','popup','a','keifont','30px','pink','middle','popup');
     await _sleep(1000)
