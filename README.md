@@ -1,13 +1,13 @@
 Githubでは保存してから実際に機能し始めるまでに時間がかかることがあります。
-[ここ](https://github.com/o-kalan-project./deployments)で新しく「Update OO」が追加されたら更新されます。
+[ここ](https://github.com/o-kalan-project/okalan/deployments)で新しく「Update OO」が追加されたら更新されます。
 
-# [GitHubバージョン](https://o-kalan-project.github.io./index.html)
+# [GitHubバージョン](https://o-kalan-project.github.io/okalan/index.html)
 
-# [ここでライブラリの実験をすることができます](https://o-kalan-project.github.io./anycode.html)
+# [ここでライブラリの実験をすることができます](https://o-kalan-project.github.io/okalan/anycode.html)
 
 ## 独自ライブラリ(e-anitor.js)の使い方
 
-[アニメーション一覧](https://o-kalan-project.github.io./js-library/sample.html)
+[アニメーション一覧](https://o-kalan-project.github.io/okalan/js-library/sample.html)
 わかると思いますがclassでアニメーション指定します。
 
 #  _animation()
@@ -56,7 +56,7 @@ Githubでは保存してから実際に機能し始めるまでに時間がか�
 >
 >  pos: middle(中央),right(右よせ),もしくは%,pxで左からの位置を指定
 >
->  animation:[アニメーション一覧](https://o-kalan-project.github.io./js-library/sample.html)で表示されている種類が使用できます。
+>  animation:[アニメーション一覧](https://o-kalan-project.github.io/okalan/js-library/sample.html)で表示されている種類が使用できます。
 >
 >  delay:自動改行の時の出現間隔
 >
