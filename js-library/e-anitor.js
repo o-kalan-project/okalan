@@ -49,18 +49,19 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
         textTag = document.createElement(tag);
         textTag.style.color=color;
         textTag.style.fontFamily=font;
+        textTag.style.fontWeight=50;
 	if(window.outerWidth>=481){
         	textTag.style.fontSize=size;
+		if(pos=='middle'){textTag.style.textAlign='center';}
+        	if(pos=='right'){textTag.style.textAlign+='right';}
+        	if(pos!='middle'||pos!='right'){
+            		textTag.style.position='relative';
+            		textTag.style.left=pos+'px';
+        	}
 	}else{
 		textTag.style.fontSize=size.slice(0,-2)/2+"px";
 	}
-        textTag.style.fontWeight=50;
-        if(pos=='middle'){textTag.style.textAlign='center';}
-        if(pos=='right'){textTag.style.textAlign+='right';}
-        if(pos!='middle'||pos!='right'){
-            textTag.style.position='relative';
-            textTag.style.left=pos+'px';
-        }
+        
         if(animation != null){textTag.className+=animation;}
         textTag.id=id
         ina=k[i].replace((' '),('&emsp;'));
