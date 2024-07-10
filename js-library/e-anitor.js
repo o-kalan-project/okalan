@@ -19,7 +19,7 @@ function _makechart(where,title,index,animation){
 function _footer(index,color){
 	footer=document.createElement("footer");
 	footer.backgroundColor=color;
-	footer.textContent="© 2024 桜花爛漫 All rights reserved.";
+	footer.textContent=index;
 	document.body.appendChild(footer);
 }  		   
 //_text('test');
