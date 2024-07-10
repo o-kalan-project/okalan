@@ -1,0 +1,58 @@
+<div class="loader">
+  <div class="txt"style='color:pink'>
+    Loading
+  </div>
+  <div class="spin a">
+  </div>
+  <div class="spin b">
+  </div>
+</div>
+<style>
+body{
+  background-color:#2e2e2e;
+}
+.loader{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+}
+.loader > .spin{
+  border:solid 5px pink;
+  border-radius: 100%;
+  position:absolute;
+  box-shadow: 0px 0px 2px 2px orange;
+}
+.spin.a{
+  width:180px;
+  height:180px;
+  top: -90px; left: -90px;
+  -webkit-animation: rotOuter 1.5s infinite linear;
+}
+.spin.b{
+  width:170px;
+  height:170px;
+  top:-90px;
+  left:-90px;
+  -webkit-animation: rotInner 1.5s infinite linear;
+}
+.loader .txt{
+  position:absolute;
+  width: 90px;
+  line-height: 90px;
+  color: white;
+  top:-45px; left: -45px;
+  text-align: center;
+}
+@-webkit-keyframes rotInner{
+  0%   { -webkit-transform: rotateY(-0deg)   rotateX(30deg); }
+  50%  { -webkit-transform: rotateY(-180deg) rotateX(210deg); }
+  100% { -webkit-transform: rotateY(-360deg) rotateX(390deg); }
+}
+@-webkit-keyframes rotOuter{
+  0%   { -webkit-transform: rotateY(0deg)   rotateX(30deg); }
+  50%  { -webkit-transform: rotateY(180deg) rotateX(30deg); }
+  100% { -webkit-transform: rotateY(360deg) rotateX(30deg); }
+}
+
+
+</style>
