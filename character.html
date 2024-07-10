@@ -52,9 +52,7 @@
             await _nobrtext('h1','武器_s&emsp;鉈(なた)','a','keifont','30px','#C0C0C0','20','Dslidein','0','prof');
             await _nobrtext('h1','目の色_s赤みのかかった茶色','a','keifont','30px','#AE503B','20','Dslidein','0','prof');
             await _nobrtext('h1','服装_s&emsp;和服セーラー','a','keifont','30px','pink','20','Dslidein','0','prof');
-	    footer=document.createElement("footer");
-	    footer.textContent="© 2024 桜花爛漫 All rights reserved."
-	    document.body.appendChild(footer);
+	    await _footer("© 2024 桜花爛漫 All rights reserved.","#cab64a");
 
             //document.getElementById('prof').innerHTML+='<div align="middle" style="margin-top:-680px"><figure><img class="zoom";id="img"src="./tatie.png" style="width:40%;height:40%;"></figure></div>'
         }
@@ -73,13 +71,6 @@
             </nav>
         </header>
         <style>
-            footer {
-  		        width: 100%;
-  		        height: 12px; 
-  		        text-align: center;
-  		        padding: 30px 0;
-  		        background-color: #cab64a;
-	        }
             html,body {
                 overflow-x: hidden;
             }
