@@ -66,11 +66,19 @@
                     <li><a href="./updatelog.html"id='olan2'style="color:pink;">アップデート記録</a>
                 </ul>
             </nav>
-	<div align="right"class="zoom"style="position:fixed;left:0;bottom:30%;">
+	<div align="right"class="zoom"style="position:fixed;left:0;"id="imgg">//モバイルなら30%
         	<img src="./tatie.png" style="width: 29%;height: 29%;">
     	</div> 
         </header>
         <style>
+	    #imgg{
+	    	bottom:0%;
+	    }
+	    @media screen and (max-width: 480px) {
+	    #imgg{
+	    	bottom:30%
+	    }
+	    }
             html,body {
                 overflow-x: hidden;
             }
