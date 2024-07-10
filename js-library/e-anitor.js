@@ -44,7 +44,7 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
     if(window.outerWidth>=481){
     	var q =window.outerWidth/size.slice(0,-2);
     }else{
-	var q =window.outerWidth/size.slice(0,-2)*2;
+	var q =window.outerWidth/size.slice(0,-2)*1.5;
     }
     var count=Math.floor(q);
     var r=new RegExp(".{1,"+count+"}","g")
@@ -58,7 +58,7 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
 	if(window.outerWidth>=481){
         	textTag.style.fontSize=size;
 	}else{
-		textTag.style.fontSize=size.slice(0,-2)/2+"px";
+		textTag.style.fontSize=size.slice(0,-2)/1.5+"px";
 	}
 	if(pos=='middle'){textTag.style.textAlign='center';}
         if(pos=='right'){textTag.style.textAlign+='right';}
@@ -82,7 +82,7 @@ async function _nobrtext(tag,index,id,font,size,color,pos,animation,delay,where)
     textTag = document.createElement(tag);
     textTag.style.color=color;
     textTag.style.fontFamily=font;
-    textTag.style.fontSize=size;
+    textTag.style.fontSize=size.slice(0,-1);
     textTag.style.fontWeight=50;
     if(pos=='middle'){textTag.style.textAlign='center';}
     if(pos=='right'){textTag.style.textAlign+='right';}
