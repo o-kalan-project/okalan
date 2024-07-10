@@ -56,7 +56,6 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
         textTag.style.fontWeight=50;
 	if(window.outerWidth>=481){
         	textTag.style.fontSize=size;
-        	}
 	}else{
 		textTag.style.fontSize=size.slice(0,-2)/2+"px";
 	}
