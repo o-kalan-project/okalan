@@ -67,6 +67,7 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
             	textTag.style.left=pos+'px';
 	}
         if(animation != null){textTag.className+=animation;}
+	texttag.style.whiteSpace="nowrap";
         textTag.id=id
         ina=k[i].replace((' '),('&emsp;'));
         ina=ina.replace(('_t'),('&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;'));
