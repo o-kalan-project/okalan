@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%">
     <head><link rel="shortcut icon" href="./favicon.ico"></head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="content-style-type" content="text/css">
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>応歌ラン(仮)</title>
-    <body style='padding:0px;margin:0px;min-width:auto;'>
+    <body style='padding:0px;margin:0px;min-width:auto;height:100%'>
         <script src='./js-library/e-anitor.js'></script>
         <script>
         document.fonts.ready.then(async function(fontFaceSet) {
@@ -61,7 +61,7 @@
         });
         //<a href="" style="color: #fff;background-color: #eb6100;">PUSH</a>
         </script>
-        <div>
+        <div style="height:100%"id="backimg">
             <div id='text'></div>
 		<footer><p>© 2024 桜花爛漫 .</p></footer>
         </div>
@@ -167,6 +167,13 @@
                 width: 160px;
                 z-index:calc(infinity);
             }
+		#backimg {
+    		background-image: url('./img/tatie.png');
+    		background-color: rgba(255, 255, 255, 0.8);
+    		background-blend-mode: lighten;
+    		background-size: contain;
+    		background-repeat: no-repeat;
+  	}
         </style>
     </body>
 </html>
