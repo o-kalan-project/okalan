@@ -57,10 +57,6 @@
         });
         //<a href="" style="color: #fff;background-color: #eb6100;">PUSH</a>
         </script><br><br><br><br>
-        <div style="height:80%"id="backimg">
-            <div id='text'></div>
-		<footer><p>© 2024 桜花爛漫 .</p></footer>
-        </div>
         <header>
             <a href="./index.html"><img src='./img/logo.png' width='50%' height='50%' id='nop'></a>
             <nav class="pc-nav">
@@ -72,27 +68,46 @@
                 </ul>
             </nav>
         </header>
-	<div align="right"class="zoom"style="right:0px;bottom:5%;position:fixed;">
+        <div style="height:80%"id="backimg">
+            <div id='text'></div>
+		<footer><p>© 2024 桜花爛漫 .</p></footer>
+        </div>
+    	<div align="right"class="zoom"style="right:0px;bottom:5%;position:fixed;">
         	<img src="./img/tatie.png" id="tatie2">
     	</div> 
 	
         <!--img src='./logo.PNG' width='30%' height='30%'><!-->
         <style>
 	    #tatie{
-	    	opacity:0.3;width: 40vw;max-width: 510px;min-width: 400px;top:-500px;position: absolute;
+	    	opacity:0.3;
+            width: 40vw;
+            max-width: 510px;
+            min-width: 400px;
+            top:-500px;
+            position: absolute;
 	    }
 	    @media screen and (max-width: 480px){
 	    	#tatie{
-			opacity:0.3;width: 500vw;max-width: 1500px;min-width: 400px;top:-500px;position: absolute;
-		}
+                opacity:0.3;
+                width: 500vw;
+                max-width: 1500px;
+                min-width: 400px;
+                top:-500px;
+                position: absolute;
+            }
 	    }
 	    #tatie2{
-	    	size:70%;max-width:518px;max-height:751px
+	    	width:350%;
+            max-width:400px;
+            max-height:751px
 	    }
 	    @media screen and (max-width: 1100px){
 	    	#tatie2{
-			size:350%;max-width:418px;max-height:751px
-		}
+                visibility:hidden;
+                width:50%;
+                max-width:418px;
+                max-height:751px
+            }
 	    }
 	    #poss{
 		    bottom:5%;
@@ -100,9 +115,9 @@
             left:0;
 	    }
 	    @media screen and (max-width: 480px) {
-		#pass{
-		    visibility:hidden;
-		}
+            #pass{
+                visibility:hidden;
+            }
 	    }
 	    footer {
   		width: 100%;
@@ -172,10 +187,22 @@
 		#backimg {
     		background-image: url('./img/tatie.png');
     		background-color: rgba(255, 255, 255, 0.8);
+            /* background-color:rgba(0, 77, 25, 0.8); */
     		background-blend-mode: lighten;
     		background-size: contain;
     		background-repeat: no-repeat;
-  	}
+  	    }
+        @media screen and (max-width: 1100px) {
+            #backimg {
+    		background-image: url('./img/tatie.png');
+    		background-color: rgba(255, 255, 255, 0.8);
+            /* background-color:rgba(0, 77, 25, 0.8); */
+    		background-blend-mode: lighten;
+    		background-size: contain;
+    		background-repeat: no-repeat;
+            background-position: center;
+      	    }
+        }
         </style>
     </body>
 </html>
