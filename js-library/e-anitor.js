@@ -16,11 +16,11 @@ function _appfont(pass,family){
 function _makechart(where,title,index,animation){
 	_id(where).innerHTML+="<dt style='font-size:30px;color:white'class="+animation+">"+title+"</dt><dd><h2 style='font-size:25px;font-weight:5;'class="+animation+">"+index+"</h2></dd>"
 }
-function _footer(index,color,footer){
+function _footer(index,color,where){
 	footer=document.createElement("footer");
 	footer.style.backgroundColor=color;
 	footer.textContent=index;
-	if(footer==null){_id(where).appendChild(footer)}else{
+	if(where!=null){_id(where).appendChild(footer)}else{
 		document.body.appendChild(footer);
 	}
 }  		   
