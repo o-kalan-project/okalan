@@ -53,77 +53,98 @@ footer {
         margin: 100px auto auto auto;
         width: 70%;
             }
-            body {
-            }
-            a {
-                text-decoration: none;
-            }
-            header {
-                padding: 30px 4% 10px;
-                position: fixed;
-                top: 0;
-                width: 100%;
-                background-color: #fff;
-                display: flex;
-                align-items: center;
-                height:50px;
+body {
+}
+a {
+    text-decoration: none;
+}
+header {
+    padding: 30px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height:50px;
         	bottom:-100;
-            }
-            h2 {
-                display: block;
-                border: 0;
-                padding: 0;
-                margin: 0;
-            }
-            ul {
-                list-style: none;
-                margin: 0;
-                display: flex;
-            }
-            li {
-                margin: 0 0 0 15px;
-                font-size: 14px;
-            }
-            nav {
-                margin: 0 0 0 auto;
-                padding-right:100px;
-                z-index:-1;
-            }
-            #olan2{
-                font-size:20px;
-                font-weight: 5;
-                color:pink;
-                font-family: "keifont";
-            }
-            #nop {
-                display: block;
-                border: 0;
-                padding: 0;
-                margin: 0;
-                margin-top:0;
-                width: 160px;
-                z-index:calc(infinity);
-            }
-		#backimg {
-    		background-image: url('../img/tatie.png');
-    		/* background-color: rgba(255, 255, 255, 0.8);
-            background-blend-mode: lighten; */
-    		background-color:rgba(0, 77, 25, 0.8);
-    		background-blend-mode:darken;
-    		background-size: contain;
-    		background-repeat: no-repeat;
-		box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
+}
+h2 {
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+}
+nav {
+    margin: 0 0 0 auto;
+    padding-right:100px;
+    z-index:-1;
+}
+#olan2{
+    font-size:20px;
+    font-weight: 5;
+    color:pink;
+    font-family: "keifont";
+}
+#nop {
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin-top:0;
+    width: 160px;
+    z-index:calc(infinity);
+}
+#backimg {
+	background-image: url('../img/tatie.png');
+	background-color:rgba(0, 77, 25, 0.8);
+	background-blend-mode:darken;
+	background-size: contain;
+	background-repeat: no-repeat;
+box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
   }
         @media screen and (max-width: 925px) {
-            #backimg {
-                background-image: url('../img/tatie.png');
-                /* background-color: rgba(255, 255, 255, 0.8);
-                background-blend-mode: lighten; */
-                background-color:rgba(0, 77, 25, 0.8);
-                background-blend-mode:darken;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
+#backimg {
+    background-image: url('../img/tatie.png');
+    background-color:rgba(0, 77, 25, 0.8);
+    background-blend-mode:darken;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 		box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
       }
-        }
+}
+/*charactor*/
+#imgg{
+	bottom:0%;
+}
+@media screen and (max-width: 480px) {
+	#imgg{
+		visibility:hidden
+	}
+}
+#img{
+	width: 29%;height: 29%;
+}
+@media screen and (max-width: 480px) {
+	visibility:hidden
+}
+#b{
+    margin : 0px ;
+    padding : 0px ;
+    border : 0px;
+}
+#imgd{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
