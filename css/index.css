@@ -1,13 +1,13 @@
 #tatie{
-	    	opacity:0.3;
+	opacity:0.3;
             width: 40vw;
             max-width: 510px;
             min-width: 400px;
             top:-500px;
             position: absolute;
-	    }
-	    @media screen and (max-width: 480px){
-	    	#tatie{
+}
+@media screen and (max-width: 480px){
+	#tatie{
                 opacity:0.3;
                 width: 500vw;
                 max-width: 1500px;
@@ -15,31 +15,31 @@
                 top:-500px;
                 position: absolute;
             }
-	    }
-	    #tatie2{
-	    	width:350%;
+}
+#tatie2{
+	width:350%;
             max-width:400px;
             max-height:751px
-	    }
-	    @media screen and (max-width: 925px){
-	    	#tatie2{
+}
+@media screen and (max-width: 925px){
+	#tatie2{
                 visibility:hidden;
                 width:50%;
                 max-width:418px;
                 max-height:751px
             }
-	    }
-	    #poss{
-		    bottom:5%;
+}
+#poss{
+	bottom:5%;
             position:fixed;
             left:0;
-	    }
-	    @media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 480px) {
             #pass{
                 visibility:hidden;
             }
-	    }
-	    footer {
+}
+footer {
   		width: 100%;
   		height: 12px; 
   		text-align: center;
@@ -47,11 +47,11 @@
   		background-color: #cab64a;
 		bottom:0;
 		position:absolute;
-	    }
+}
             figure {
-	            float: right;
-	            margin: 100px auto auto auto;
-	            width: 70%;
+        float: right;
+        margin: 100px auto auto auto;
+        width: 70%;
             }
             body {
             }
@@ -113,7 +113,7 @@
     		background-size: contain;
     		background-repeat: no-repeat;
 		box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
-  	    }
+  }
         @media screen and (max-width: 925px) {
             #backimg {
                 background-image: url('../img/tatie.png');
@@ -125,5 +125,5 @@
                 background-repeat: no-repeat;
                 background-position: center;
 		box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
-      	    }
+      }
         }
