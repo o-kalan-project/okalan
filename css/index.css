@@ -105,7 +105,7 @@
                 z-index:calc(infinity);
             }
 		#backimg {
-    		background-image: url('../../img/tatie.png');
+    		background-image: url('../img/tatie.png');
     		/* background-color: rgba(255, 255, 255, 0.8);
             background-blend-mode: lighten; */
     		background-color:rgba(0, 77, 25, 0.8);
@@ -116,7 +116,7 @@
   	    }
         @media screen and (max-width: 925px) {
             #backimg {
-                background-image: url('../../img/tatie.png');
+                background-image: url('../img/tatie.png');
                 /* background-color: rgba(255, 255, 255, 0.8);
                 background-blend-mode: lighten; */
                 background-color:rgba(0, 77, 25, 0.8);
