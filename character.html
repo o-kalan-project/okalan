@@ -11,7 +11,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
         window.onload = async function() {
-	    await document.fonts.ready.then(function(fontFaceSet){})
+	    document.fonts.ready.then(function(fontFaceSet){
 	    await $('.loader').delay(600).fadeOut(600);
             await _sleep(1500);
 	    document.getElementById('hide').style.display="block";
@@ -64,6 +64,7 @@
 	    await _br("prof")
 	    await _br("prof")
 	    await _footer("© 2024 桜花爛漫 All rights reserved.","#cab64a","prof");
+	    )}
         }
         </script>
 	<div id="hide"style="display:none">
