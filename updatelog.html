@@ -10,7 +10,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
         window.onload = async function () {
-	    await document.fonts.ready.then(function(fontFaceSet){})
+	    document.fonts.ready.then(function(fontFaceSet){
             //自作のライブラリは最強だ!
 	    await $('.loader').delay(600).fadeOut(600);
             await _sleep(1500);
@@ -29,7 +29,7 @@
 	    await _br("los");
 	    await _makechart('los','7.9','ロゴが決定し、公式Webサイトが運営を開始する','slowzoom');
 	    await _br("los");
-        };
+        	})};
         </script>
 
         <div id="hide"style="display:none">
