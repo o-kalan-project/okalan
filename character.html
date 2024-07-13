@@ -12,7 +12,7 @@
         <script>
         window.onload = async function() {
 	    document.fonts.ready.then(async function(fontFaceSet){
-	    _appfont('./keifont.ttf','keifont');
+	    await _appfont('./keifont.ttf','keifont');
 	    await $('.loader').delay(600).fadeOut(600);
             await _sleep(1500);
 	    document.getElementById('hide').style.display="block";
