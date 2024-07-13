@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>応歌ラン(仮)</title>
     <body style="background-color:#2e2e2e";>
-        <div id="hide">
+        <div id="hide"style="display:none">
         <header>
             <a href="./index.html"><img src='./img/logo.png' width='40%' height='40%' id='nop'></a>
             <nav class="pc-nav">
@@ -36,7 +36,7 @@
             });
         </script>
         <!--img src='./logo.PNG' width='30%' height='30%'><!-->
-        <h1 id='olan'>どうもみなさんこんにちは!<br><br></h1>
+        <h1 id='olan'><br><br><br></h1>
         <a href='./kiyaku.docx' id='olan2'>利用規約/2024年7月1日時点</a>
         <div class="loading"></div>
         <link rel="stylesheet" type="text/css" href="./css/index.css" />
@@ -45,6 +45,7 @@ $(function(){
   $(window).on('load',function(){
     $('.loader').delay(600).fadeOut(600);
 })});
+            document.getElementById('hide').style.display="block"
 </script>
 <style>
 .loader{
