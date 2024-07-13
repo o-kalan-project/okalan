@@ -14,7 +14,7 @@ function _appfont(pass,family){
     document.head.appendChild(styleTag);
 }
 function _makechart(where,title,index,animation){
-	_id(where).innerHTML+="<dt style='font-size:30px;color:white;'class="+animation+">"+title+"</dt><dd><h2 style='font-size:25px;font-weight:5;font-family:keifont;'class="+animation+">"+index+"</h2></dd>"
+	_id(where).innerHTML+="<dt style='font-size:30px;color:white;font-family:keifont;'class="+animation+">"+title+"</dt><dd><h2 style='font-size:25px;font-weight:5;font-color:pink'class="+animation+">"+index+"</h2></dd>"
 }
 function _footer(index,color,where){
 	footer=document.createElement("footer");
