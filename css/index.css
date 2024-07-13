@@ -67,7 +67,8 @@ header {
     display: flex;
     align-items: center;
     height:50px;
-        	bottom:-100;
+    bottom:-100;
+    z-index:calc(infinity)
 }
 h2 {
     display: block;
