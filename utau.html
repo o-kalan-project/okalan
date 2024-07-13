@@ -20,11 +20,12 @@
         <script src="./js-library/e-anitor.js"></script>
         <script>
             window.onload = async function () {
-                await document.fonts.ready.then(function(fontFaceSet){})
+                await document.fonts.ready.then(function(fontFaceSet){
                 _animation();
                 await _freetext('h1','UTAUの配布場所です。','a','keifont','30px','pink','middle','popup','0');
                 await _sleep(100)
                 await _freetext('h1','まだUTAUは完成していません!乞うご期待!!','a','keifont','30px','red','middle','popup','0');
+                });
             };
         </script>
         <!--img src='./logo.PNG' width='30%' height='30%'><!-->
