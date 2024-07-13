@@ -22,11 +22,12 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
             window.onload = async function () {
-                await document.fonts.ready.then(function(fontFaceSet){})
+                document.fonts.ready.then(function(fontFaceSet){
                 _animation();
                 await $('.loader').delay(600).fadeOut(600);
                 await _sleep(1500);
                 document.getElementById('hide').style.display="block";
+                });
             };
         </script>
         <!--img src='./logo.PNG' width='30%' height='30%'><!-->
