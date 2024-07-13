@@ -42,10 +42,11 @@
         <link rel="stylesheet" type="text/css" href="./css/index.css" />
         <script>
 $(function(){
-  $(window).on('load',function(){
-    $('.loader').delay(600).fadeOut(600);
+  $(window).on('load',async function(){
+    await $('.loader').delay(600).fadeOut(600);
+    await _sleep(100)
+    await document.getElementById('hide').style.display="block"
 })});
-            document.getElementById('hide').style.display="block"
 </script>
 <style>
 .loader{
