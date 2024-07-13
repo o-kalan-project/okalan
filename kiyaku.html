@@ -18,7 +18,9 @@
                 </ul>
             </nav>
         </header>
-          <div class="loader">
+        </div>
+    </div>
+        <div class="loader">
           <div class="txt"style='color:pink'>
             Loading
           </div>
@@ -26,8 +28,6 @@
           </div>
           <div class="spin b">
           </div>
-        </div>
-    </div>
         <script src="./js-library/e-anitor.js"></script>
         <script>
             document.fonts.ready.then(async function(fontFaceSet) {
@@ -44,8 +44,8 @@
 $(function(){
   $(window).on('load',async function(){
     await $('.loader').delay(600).fadeOut(600);
-    await _sleep(100)
-    await document.getElementById('hide').style.display="block"
+    await _sleep(100);
+    document.getElementById('hide').style.display="block";
 })});
 </script>
 <style>
