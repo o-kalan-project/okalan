@@ -26,7 +26,7 @@
 		const API_URL = 'https://api.ipify.org/?format=json'
                 const res = await fetch(API_URL)
                 const data = await res.json()
-                fetch('https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip='+data.ip+'&where=charactor&keit='+window.navigator.userAgent,{method: 'GET',headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
+                fetch('https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip='+data.ip+'&where=kiyaku&keit='+window.navigator.userAgent,{method: 'GET',headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
                 _animation();
 		_appfont('./keifont.ttf','keifont');
                 await $('.loader').delay(600).fadeOut(600);
