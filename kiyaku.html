@@ -11,10 +11,10 @@
             <a href="./index.html"><img src='./img/logo.png' width='40%' height='40%' id='nop'></a>
             <nav class="pc-nav">
                 <ul>
-                    <li><a href="./character.html"id='olan2'style="color:pink;">当キャラクターについて</a></li>
-                    <li><a href="./kiyaku.html"id='olan2'style="color:pink;">利用規約</a></li>
-                    <li><a href="./utau.html"id='olan2'style="color:pink;">UTAU</a></li>
-                    <li><a href="./updatelog.html"id='olan2'style="color:pink;">アップデート記録</a>
+                    <li><a href="./character.html"id='olan2'style="color:pink;"class="a">当キャラクターについて</a></li>
+                    <li><a href="./kiyaku.html"id='olan2'style="color:pink;"class="b">利用規約</a></li>
+                    <li><a href="./utau.html"id='olan2'style="color:pink;"class="c">UTAU</a></li>
+                    <li><a href="./updatelog.html"id='olan2'style="color:pink;"class="d">アップデート記録</a>
                 </ul>
             </nav>
         </header>
@@ -33,6 +33,49 @@
                 await _sleep(1500);
                 document.getElementById('hide').style.display="block";
 		document.getElementById('hide2').style.display="block";
+			$(".a").on("mouseover",function(){
+                    $(".a").css({
+                        color: "#4dc0b2",
+                    });
+                });
+                $(".a").on("mouseout",function(){
+                    $(".a").css({
+                        color: "",
+                    });
+                });
+
+                $(".b").on("mouseover",function(){
+                    $(".b").css({
+                        color: "#4dc0b2",
+                    });
+                });
+                $(".b").on("mouseout",function(){
+                    $(".b").css({
+                        color: "",
+                    });
+                });
+
+                $(".c").on("mouseover",function(){
+                    $(".c").css({
+                        color: "#4dc0b2",
+                    });
+                });
+                $(".c").on("mouseout",function(){
+                    $(".c").css({
+                        color: "",
+                    });
+                });
+
+                $(".d").on("mouseover",function(){
+                    $(".d").css({
+                        color: "#4dc0b2",
+                    });
+                });
+                $(".d").on("mouseout",function(){
+                    $(".d").css({
+                        color: "",
+                    });
+                });
                 });
             };
         </script>
