@@ -19,7 +19,7 @@
                     const API_URL = 'https://api.ipify.org/?format=json'
                     const res = await fetch(API_URL)
                     const data = await res.json()
-                    fetch('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+data.ip+'&where=charactor&keit='+window.navigator.userAgent,{method: 'GET',headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
+                    fetch('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+data.ip+'&where=charactor&kit='+window.navigator.userAgent,{method: 'GET',headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
                     $.when(a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
                            ).done(async function(){
                     await $('.loader').delay(600).fadeOut(600);
