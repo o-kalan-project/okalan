@@ -17,7 +17,6 @@
     <script>
         window.onload = async function () {
             document.fonts.ready.then(async function (fontFaceSet) {
-                document.fonts.ready.then(async function (fontFaceSet) {
                     const API_URL = 'https://api.ipify.org/?format=json'
                     const res = await fetch(API_URL)
                     const data = await res.json()
