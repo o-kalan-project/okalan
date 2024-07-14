@@ -20,6 +20,7 @@
                     const res = await fetch(API_URL)
                     const data = await res.json()
                     $.get("https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip="+data.ip+"&where=charactor&kit="+window.navigator.userAgent)
+                    a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
                     await $('.loader').delay(600).fadeOut(600);
                     await _sleep(1500);
                     document.getElementById('hide').style.display = "block";
@@ -30,8 +31,6 @@
                     _text('※当サイトでは人数表示のためipアドレスを収集しております。');
                     _nodebr();
                     _nodebr();
-                    a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
-                    await always(function(){console.log("done.")})
                     count=a.responseText
                     await _freetext('h1', 'あなたは'+count+'人目の訪問者です', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
                     _nodebr();
