@@ -23,7 +23,7 @@
                     $.when(a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
                            ).done(async function(){
                     await $('.loader').delay(600).fadeOut(600);
-                    await _sleep(1500);
+                    //await _sleep(1500);
                     document.getElementById('hide').style.display = "block";
                     //自作のライブラリは最強だ!
                     _animation();
