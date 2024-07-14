@@ -32,7 +32,7 @@
                     _text('※当サイトでは人数表示のためipアドレスを収集しております。');
                     _nodebr();
                     _nodebr();
-                    count=a.responseText
+                    count=Number(a.responseText)+1
                     await _freetext('h1', 'あなたは'+count+'人目の訪問者です', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
                     _nodebr();
                     _nodebr();
