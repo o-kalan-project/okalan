@@ -1,0 +1,80 @@
+<!--　　　 ∧＿＿∧　やあ
+　　 （´・ω・｀)　　　　　 /
+　　／::∇y:::::＼　　　[￣￣]
+　　|:::⊃:|:::::|      |──|
+￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+￣￣￣￣￣￣￣￣￣￣￣￣￣￣ |￣￣
+￣￣￣￣￣￣￣￣￣￣￣￣￣￣ |
+　　　　∇　∇　∇　∇　  ／ |
+　　　　┴　┴　┴　┴　／ ／|
+￣￣￣￣￣￣￣￣￣￣￣￣|／　|
+￣￣￣￣￣￣￣￣￣￣￣￣　　 |
+　　(⊆⊇)　(⊆⊇)　(⊆⊇)　 |
+　　　||　　　||　　　||　　 |
+--!>
+
+<!DOCTYPE html>
+<html style="height:100%">
+    <head><link rel="shortcut icon" href="./favicon.ico"><link rel="preload" as="font" href="./keifont.ttf"></script></head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>応歌ラン(仮)</title>
+    <body style="height:100%">
+        <div id="hide">
+        <header>
+            <a href="./index.html"><img src='./img/logo.png' width='40%' height='40%' id='nop'></a>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="./character.html"id='olan2'style="color:pink;">当キャラクターについて</a></li>
+                    <li><a href="./kiyaku.html"id='olan2'style="color:pink;">利用規約</a></li>
+                    <li><a href="./utau.html"id='olan2'style="color:pink;">UTAU</a></li>
+                    <li><a href="./updatelog.html"id='olan2'style="color:pink;">アップデート記録</a>
+                </ul>
+            </nav>
+        </header>
+        <div id="text"></div>
+        <script src="./js-library/e-anitor.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            window.onload = async function () {
+                document.fonts.ready.then(async function(fontFaceSet){
+		            const API_URL = 'https://api.ipify.org/?format=json'
+                const res = await fetch(API_URL)
+                const data = await res.json()
+                fetch('https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip='+data.ip+'&where=404notfound&keit='+window.navigator.userAgent,{method: 'GET',headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
+                _animation();
+		            _appfont('./keifont.ttf','keifont');
+                await _freetext('h1', 'やあ （´・ω・｀)', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+                await _freetext('h1', 'ようこそ、バーボンハウスへ。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+                await _br()
+                await _freetext('h1', 'うん、「また」なんだ。済まない。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+                await _freetext('h1', '仏の顔もっていうしね、謝って許してもらおうとも思っていない。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+                await _freetext('h1', 'でも、この画面を見たとき、君はきっと言葉では言い表せない', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+                await _freetext('h1', '「ときめき」や「なつかしさ」みたいなものを感じてくれたと思う。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+                await _freetext('h1', '殺伐とした世の中で、そういう気持ちを感じてくれたと思う。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+                await _freetext('h1', 'じゃあ、注文を聞こうか。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                await _br()
+
+                });
+            };
+        </script>
+<style>
+		body{
+    			background-image: url('./img/tatie.png');
+    			background-color:rgba(0, 77, 25, 0.8);
+    			background-blend-mode:darken;
+    			background-size: contain;
+    			background-repeat: no-repeat;
+    			background-position: center;
+      		}
+	    </style>
+    </body>
+</html>
