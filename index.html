@@ -11,6 +11,13 @@
         <script>
         window.onload = async function () {
 	document.fonts.ready.then(async function(fontFaceSet){
+	document.fonts.ready.then(async function(fontFaceSet){
+	const API_URL = 'https://api.ipify.org/?format=json'
+	const res = await fetch(API_URL)
+	const data = await res.json()
+	$.get("https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip="+data.ip+"&where=charactor", () => {
+  	    	console.log(data);
+	});
 	await $('.loader').delay(600).fadeOut(600);
                 await _sleep(1500);
                 document.getElementById('hide').style.display="block";
