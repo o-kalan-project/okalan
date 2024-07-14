@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html style="height:100%;">
-    <head><link rel="shortcut icon" href="./img/favicon.ico"><link rel="preload" as="font" href="./keifont.ttf"></head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="content-style-type" content="text/css">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <title>応歌ラン(仮)</title>
-    <body style='padding:0px;margin:0px;min-width:auto;height:100%;'>
-        <script src='./js-library/e-anitor.js'></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script>
-        window.onload = async function () {
-	    document.fonts.ready.then(async function(fontFaceSet){
-            //自作のライブラリは最強だ!
-	    await $('.loader').delay(600).fadeOut(600);
-            await _sleep(1500);
-            document.getElementById('hide').style.display="block";
-            _animation();
-            _appfont('./keifont.ttf','keifont');
-	    await _makechart('los','2024.6.8','応歌ラン・にこファンちゃん作成の合同Discordが開設される','slowzoom');
-	    await _br("los")
-	    await _makechart('los','6.18','応歌ランの設定が決まる','slowzoom');
-	    await _br("los")
-	    await _makechart('los','6.25','応歌ランの名前が決まる','slowzoom');
-	    await _br("los");
-	    await _makechart('los','6.28','デザインの概要が決まる','slowzoom');
-	    await _br("los");
-	    await _makechart('los','7.4','公式イラストが決定する','slowzoom');
-	    await _br("los");
-	    await _makechart('los','7.9','ロゴが決定し、公式Webサイトが運営を開始する','slowzoom');
-	    await _br("los");
-        	})};
-        </script>
 
-        <div id="hide"style="display:none">
-	<header>
+<head>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="preload" as="font" href="./keifont.ttf">
+</head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>応歌ラン(仮)</title>
+
+<body style='padding:0px;margin:0px;min-width:auto;height:100%;'>
+    <script src='./js-library/e-anitor.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        window.onload = async function () {
+            document.fonts.ready.then(async function (fontFaceSet) {
+                const API_URL = 'https://api.ipify.org/?format=json'
+                const res = await fetch(API_URL)
+                const data = await res.json()
+                $.get("https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip=" + data.ip + "&where=charactor", () => {
+                    console.log(data);
+                });
+                //自作のライブラリは最強だ!
+                await $('.loader').delay(600).fadeOut(600);
+                await _sleep(1500);
+                document.getElementById('hide').style.display = "block";
+                _animation();
+                _appfont('./keifont.ttf', 'keifont');
+                await _makechart('los', '2024.6.8', '応歌ラン・にこファンちゃん作成の合同Discordが開設される', 'slowzoom');
+                await _br("los")
+                await _makechart('los', '6.18', '応歌ランの設定が決まる', 'slowzoom');
+                await _br("los")
+                await _makechart('los', '6.25', '応歌ランの名前が決まる', 'slowzoom');
+                await _br("los");
+                await _makechart('los', '6.28', 'デザインの概要が決まる', 'slowzoom');
+                await _br("los");
+                await _makechart('los', '7.4', '公式イラストが決定する', 'slowzoom');
+                await _br("los");
+                await _makechart('los', '7.9', 'ロゴが決定し、公式Webサイトが運営を開始する', 'slowzoom');
+                await _br("los");
+            })
+        };
+    </script>
+
+    <div id="hide" style="display:none">
+        <header>
             <a href="./index.html"><img src='./img/logo.png' width='50%' height='50%' id='nop'></a>
             <nav class="pc-nav">
                 <ul>
-                    <li><a href="./character.html"id='olan2'style="color:pink;">当キャラクターについて</a></li>
-                    <li><a href="./kiyaku.html"id='olan2'style="color:pink;">利用規約</a></li>
-                    <li><a href="./utau.html"id='olan2'style="color:pink;">UTAU</a></li>
-                    <li><a href="./updatelog.html"id='olan2'style="color:pink;">アップデート記録</a>
+                    <li><a href="./character.html" id='olan2' style="color:pink;">当キャラクターについて</a></li>
+                    <li><a href="./kiyaku.html" id='olan2' style="color:pink;">利用規約</a></li>
+                    <li><a href="./utau.html" id='olan2' style="color:pink;">UTAU</a></li>
+                    <li><a href="./updatelog.html" id='olan2' style="color:pink;">アップデート記録</a>
                 </ul>
             </nav>
         </header>
-        <div id='text'><br><br><br><br><h1 class="zoom" id="a" style="color: pink; font-family: keifont; font-size: 30px; font-weight: 50; text-align: center; position: relative;">アップデート履歴・歴史</h1><br></div>
-        	<div id='dl' style='position:absolute;left:20%;'>
-            		<h1>年表</h1>
-            		<dl id='los'></dl>
-        	</div>
-        	<ul id="timeline"></ul>
-	</div>
-	<link rel="stylesheet" type="text/css" href="./css/index.css" />
-	<link rel="stylesheet" type="text/css" href="./css/load.css" />
-        <div class="loader">
-          <div class="txt"style='color:pink'>
-            Loading
-          </div>
-          <div class="spin a">
-          </div>
-          <div class="spin b">
-          </div>
+        <div id='text'><br><br><br><br>
+            <h1 class="zoom" id="a"
+                style="color: pink; font-family: keifont; font-size: 30px; font-weight: 50; text-align: center; position: relative;">
+                アップデート履歴・歴史</h1><br>
         </div>
-	<style>
-		body{
-    			background-image: url('./img/tatie.png');
-    			background-color:rgba(0, 77, 25, 0.8);
-    			background-blend-mode:darken;
-    			background-size: contain;
-    			background-repeat: no-repeat;
-    			background-position: center;
-			box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
-      		}
-	</style>
-    </body>
+        <div id='dl' style='position:absolute;left:20%;'>
+            <h1>年表</h1>
+            <dl id='los'></dl>
+        </div>
+        <ul id="timeline"></ul>
+    </div>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/load.css" />
+    <div class="loader">
+        <div class="txt" style='color:pink'>
+            Loading
+        </div>
+        <div class="spin a">
+        </div>
+        <div class="spin b">
+        </div>
+    </div>
+    <style>
+        body {
+            background-image: url('./img/tatie.png');
+            background-color: rgba(0, 77, 25, 0.8);
+            background-blend-mode: darken;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: -5px -5px 1px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</body>
+
 </html>
