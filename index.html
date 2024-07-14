@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html style="height:100%">
-    <head><link rel="shortcut icon" href="./img/favicon.ico"><link rel="preload" as="font" href="./keifont.ttf"><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script></head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <title>応歌ラン(仮)</title>
-    <body style='padding:0px;margin:0px;min-width:auto;height:100%'> 
-        <script src='./js-library/e-anitor.js'></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script>
+
+<head>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="preload" as="font" href="./keifont.ttf">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>応歌ラン(仮)</title>
+
+<body style='padding:0px;margin:0px;min-width:auto;height:100%'>
+    <script src='./js-library/e-anitor.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
         window.onload = async function () {
-	document.fonts.ready.then(async function(fontFaceSet){
-	document.fonts.ready.then(async function(fontFaceSet){
-	const API_URL = 'https://api.ipify.org/?format=json'
-	const res = await fetch(API_URL)
-	const data = await res.json()
-	$.get("https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip="+data.ip+"&where=charactor", () => {
-  	    	console.log(data);
-	});
-	await $('.loader').delay(600).fadeOut(600);
-                await _sleep(1500);
-                document.getElementById('hide').style.display="block";
-            //自作のライブラリは最強だ!
-            _animation();
-            _appfont('./keifont.ttf','keifont');
-            _text('応歌ランの公式ページ(仮)です');
-            _nodebr();
-            _nodebr();
-            _nodebr();
-            _nodebr();
-            document.getElementById("text").innerHTML+='<div style="text-align: center;"class="box2"><a href="./updatelog.html" style="color: rgb(255, 255, 255); background-color: pink; font-family: keifont; font-size: 50px;">年表</a></div>'
-            _nodebr();
-            _nodebr();
-            _nodebr();
-            _nodebr();
-            _nodebr();
-            _nodebr();
-            _nodebr();
-            await _sleep(100);
-            await _freetext('h1','ニコ動が落ちてから','a','keifont','30px','pink','middle','popup','0');
-            await _sleep(100);
-            _freetext('h1','Loading……','id','keifont','30px','pink','middle','popup','0');
-            NicovideoDown = new Date('2024/06/08 06:00:00');
-            setInterval(() => {
-                da=new Date(Date.now() + ((new Date().getTimezoneOffset() + (540)) * 60 * 1000))
-                y=da.getFullYear().toString();
-                m=da.getMonth()+1
-                m=m.toString();
-                d=da.getDate().toString();
-                h=da.getHours().toString();
-                mo=da.getMinutes().toString();
-                s=da.getSeconds().toString();
-                if(m.length==1){m='0'+m}
-                if(d.length==1){d='0'+d}
-                if(h.length==1){h='0'+h}
-                if(mo.length==1){mo='0'+mo}
-                if(s.length==1){s='0'+s}
-                dat1 =new Date(y+'/'+m+'/'+d+' '+h+':'+mo+':'+s)
-                diff = dat1.getTime() - NicovideoDown.getTime();
-                diff=diff/1000
-                min=Math.floor(diff/60);
-                hou=Math.floor(min/60);
-                day=Math.floor(hou/24)
+            document.fonts.ready.then(async function (fontFaceSet) {
+                document.fonts.ready.then(async function (fontFaceSet) {
+                    const API_URL = 'https://api.ipify.org/?format=json'
+                    const res = await fetch(API_URL)
+                    const data = await res.json()
+                    $.get("https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip=" + data.ip + "&where=charactor", () => {
+                        console.log(data);
+                    });
+                    await $('.loader').delay(600).fadeOut(600);
+                    await _sleep(1500);
+                    document.getElementById('hide').style.display = "block";
+                    //自作のライブラリは最強だ!
+                    _animation();
+                    _appfont('./keifont.ttf', 'keifont');
+                    _text('応歌ランの公式ページ(仮)です');
+                    _nodebr();
+                    _nodebr();
+                    _nodebr();
+                    _nodebr();
+                    document.getElementById("text").innerHTML += '<div style="text-align: center;"class="box2"><a href="./updatelog.html" style="color: rgb(255, 255, 255); background-color: pink; font-family: keifont; font-size: 50px;">年表</a></div>'
+                    _nodebr();
+                    _nodebr();
+                    _nodebr();
+                    _nodebr();
+                    _nodebr();
+                    _nodebr();
+                    _nodebr();
+                    await _sleep(100);
+                    await _freetext('h1', 'ニコ動が落ちてから', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                    await _sleep(100);
+                    _freetext('h1', 'Loading……', 'id', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
+                    NicovideoDown = new Date('2024/06/08 06:00:00');
+                    setInterval(() => {
+                        da = new Date(Date.now() + ((new Date().getTimezoneOffset() + (540)) * 60 * 1000))
+                        y = da.getFullYear().toString();
+                        m = da.getMonth() + 1
+                        m = m.toString();
+                        d = da.getDate().toString();
+                        h = da.getHours().toString();
+                        mo = da.getMinutes().toString();
+                        s = da.getSeconds().toString();
+                        if (m.length == 1) { m = '0' + m }
+                        if (d.length == 1) { d = '0' + d }
+                        if (h.length == 1) { h = '0' + h }
+                        if (mo.length == 1) { mo = '0' + mo }
+                        if (s.length == 1) { s = '0' + s }
+                        dat1 = new Date(y + '/' + m + '/' + d + ' ' + h + ':' + mo + ':' + s)
+                        diff = dat1.getTime() - NicovideoDown.getTime();
+                        diff = diff / 1000
+                        min = Math.floor(diff / 60);
+                        hou = Math.floor(min / 60);
+                        day = Math.floor(hou / 24)
 
-                document.getElementById('id').textContent=day+'日'+hou%24+'時間'+min%60+'分'+diff%60+'秒'
+                        document.getElementById('id').textContent = day + '日' + hou % 24 + '時間' + min % 60 + '分' + diff % 60 + '秒'
 
-            },1000)
-	});
-        };
+                    }, 1000)
+                });
+            });
+        }
         //<a href="" style="color: #fff;background-color: #eb6100;">PUSH</a>
-        </script><br><br><br><br>
-	<div id="hide"style="display:none;height:100%">
+    </script><br><br><br><br>
+    <div id="hide" style="display:none;height:100%">
         <header>
             <a href="./index.html"><img src='./img/logo.png' width='50%' height='50%' id='nop'></a>
             <nav class="pc-nav">
                 <ul>
-                    <li><a href="./character.html"id='olan2'style="color:pink;">当キャラクターについて</a></li>
-                    <li><a href="./kiyaku.html"id='olan2'style="color:pink;">利用規約</a></li>
-                    <li><a href="./utau.html"id='olan2'style="color:pink;">UTAU</a></li>
-                    <li><a href="./updatelog.html"id='olan2'style="color:pink;">アップデート記録</a>
+                    <li><a href="./character.html" id='olan2' style="color:pink;">当キャラクターについて</a></li>
+                    <li><a href="./kiyaku.html" id='olan2' style="color:pink;">利用規約</a></li>
+                    <li><a href="./utau.html" id='olan2' style="color:pink;">UTAU</a></li>
+                    <li><a href="./updatelog.html" id='olan2' style="color:pink;">アップデート記録</a>
                 </ul>
             </nav>
         </header>
-        <div style="height:80%"id="backimg">
+        <div style="height:80%" id="backimg">
             <div id='text'></div>
-		<footer><p>© 2024 桜花爛漫 .</p></footer>
+            <footer>
+                <p>© 2024 桜花爛漫 .</p>
+            </footer>
         </div>
-    	<div align="right"class="zoom"style="right:0px;bottom:5%;position:fixed;">
-        	<img src="./img/tatie.png" id="tatie2">
-    	</div> 
-	</div>
-	
-        <!--img src='./logo.PNG' width='30%' height='30%'><!-->
-        <link rel="stylesheet" type="text/css" href="./css/index.css" />
-	<link rel="stylesheet" type="text/css" href="./css/load.css" />
-        <div class="loader">
-          <div class="txt"style='color:pink'>
+        <div align="right" class="zoom" style="right:0px;bottom:5%;position:fixed;">
+            <img src="./img/tatie.png" id="tatie2">
+        </div>
+    </div>
+
+    <!--img src='./logo.PNG' width='30%' height='30%'><!-->
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/load.css" />
+    <div class="loader">
+        <div class="txt" style='color:pink'>
             Loading
-          </div>
-          <div class="spin a">
-          </div>
-          <div class="spin b">
-          </div>
         </div>
-    </body>
+        <div class="spin a">
+        </div>
+        <div class="spin b">
+        </div>
+    </div>
+</body>
+
 </html>
