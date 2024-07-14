@@ -24,6 +24,7 @@
             window.onload = async function () {
                 document.fonts.ready.then(async function(fontFaceSet){
                 _animation();
+		_appfont('./keifont.ttf','keifont');
                 await $('.loader').delay(600).fadeOut(600);
                 await _sleep(1500);
                 document.getElementById('hide').style.display="block";
@@ -35,7 +36,7 @@
         style="color:pink;font-family: keifont; font-size: 50px;">利用規約/2024年7月1日時点</a></div>
 </div>
 <div>
-    <div style="font-size:25px;font-family:keifont;">
+    <div style="font-size:25px;font-family:keifont;font-weight:50px;">
         <h2>Q &amp; A</h2>
         <p>ここは、わかりやすく規約を確認していただくための場所です。<br>具体的な利用規約は当ページ下部にございます。</p>
         <h3>商用・非商用利用について</h3>
