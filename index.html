@@ -16,12 +16,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         window.onload = async function () {
-            document.fonts.ready.then(async function (fontFaceSet) {
                     const API_URL = 'https://api.ipify.org/?format=json'
                     const res = await fetch(API_URL)
                     const data = await res.json()
                     $.get("https://script.google.com/macros/s/AKfycbzh5nmQV1k6wtl41XpqvFxZxC0ioONfeu1AJ10WdTEnQeh55z5m7jSy1CGAXbivAsV1/exec?ip="+data.ip+"&where=charactor&kit="+window.navigator.userAgent)
-                    });
                     a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
                     count=a.responseText
                     await $('.loader').delay(600).fadeOut(600);
@@ -76,9 +74,7 @@
                         document.getElementById('id').textContent = day + '日' + hou % 24 + '時間' + min % 60 + '分' + diff % 60 + '秒'
 
                     }, 1000)
-                });
-            });
-        }
+                };
         //<a href="" style="color: #fff;background-color: #eb6100;">PUSH</a>
     </script><br><br><br><br>
     <div id="hide" style="display:none;height:100%">
