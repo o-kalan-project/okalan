@@ -81,3 +81,5 @@ Githubでは保存してから実際に機能し始めるまでに時間がか�
 # _footer(内容,背景色,場所ID)
 
 >指定した場所の最後に背景色のフッターを追加する。
+>
+>https://docs.google.com/spreadsheets/d/1HdMvTSixEwDSdtN52NDi-W_Meet9eiHUFRMv-NbBRyg/
