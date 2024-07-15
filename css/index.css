@@ -1,3 +1,9 @@
+html,body{
+	height:100%
+}
+body{
+	background-color:rgba(0, 77, 25, 0.8);
+}
 #tatie{
 	opacity:0.3;
             width: 40vw;
@@ -121,7 +127,7 @@ box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-		box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
+    box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
       }
 }
 /*charactor*/
