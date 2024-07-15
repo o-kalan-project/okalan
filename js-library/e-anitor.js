@@ -2,7 +2,7 @@ function _sleep(milliseconds) {return new Promise(resolve => setTimeout(resolve,
 function _id(where){return document.getElementById(where)}
 function _class(where){return document.getElementsByClassName(where)}
 function _tag(where){return document.getElementsByTagName(where)}
-async function goto(where){$('#hide').fadeOut(300);await _sleep(550);window.location.href=where}
+async function _goto(where){$('#hide').fadeOut(300);await _sleep(550);window.location.href=where}
 // _appfont('/static/keifont.ttf','keifont');
 function _appfont(pass,family){
     var styleTag = document.createElement('style');
