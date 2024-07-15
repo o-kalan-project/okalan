@@ -118,8 +118,9 @@
                     });
                 });
                 };
-        function goto(where){
+        async function goto(where){
             $('#hide').fadeOut(500);
+            await sleep(550);
             window.location.href=where
         }
     </script><br><br><br><br>
