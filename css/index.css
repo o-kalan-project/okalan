@@ -4,6 +4,9 @@ html,body{
 body{
 	background-color:rgba(0, 77, 25, 0.8);
 }
+body.none{
+	
+}
 #tatie{
 	opacity:0.3;
             width: 40vw;
