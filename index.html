@@ -119,7 +119,7 @@
                 });
                 };
         async function goto(where){
-            $('#hide').fadeOut(500);
+            $('#hide').fadeOut(300);
             await _sleep(550);
             window.location.href=where
         }
@@ -130,9 +130,9 @@
             <nav class="pc-nav">
                 <ul>
                     <li><a href="javascript:goto('./character.html');" id='olan2' style="color:pink;"class="a">当キャラクターについて</a></li>
-                    <li><a href="./kiyaku.html" id='olan2' style="color:pink;"class="b">利用規約</a></li>
-                    <li><a href="./utau.html" id='olan2' style="color:pink;"class="c">UTAU</a></li>
-                    <li><a href="./updatelog.html" id='olan2' style="color:pink;"class="d">アップデート記録</a>
+                    <li><a href="javascript:goto('./kiyaku.html');" id='olan2' style="color:pink;"class="b">利用規約</a></li>
+                    <li><a href="javascript:goto('./utau.html');" id='olan2' style="color:pink;"class="c">UTAU</a></li>
+                    <li><a href="javascript:goto('./updatelog.html');" id='olan2' style="color:pink;"class="d">アップデート記録</a>
                 </ul>
             </nav>
         </header>
