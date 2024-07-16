@@ -27,7 +27,7 @@
     <script>
         window.onload = async function () {
             await document.fonts.ready.then(async function (fontFaceSet) {
-                $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=kiyaku&kit='+window.navigator.userAgent)}, "jsonp");_animation();
+                $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=utau&kit='+window.navigator.userAgent)}, "jsonp");_animation();
                 _appfont('./keifont.ttf', 'keifont');
                 await _freetext('h1', 'UTAUの配布場所です。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
                 await _sleep(100)
