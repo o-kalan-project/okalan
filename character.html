@@ -14,7 +14,7 @@
 	    $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=character&kit='+window.navigator.userAgent)}, "jsonp");
 	    await _appfont('./keifont.ttf','keifont');
 	    await $('.loader').delay(600).fadeOut(600);
-	    if(window.outerWidth<426){$('#header').css("display","none");document.body.innerHTML+="<a href='javascript:_goto3(\'./hamburger.html\')"><h1 style="text-align:center;background:pink;position:fixed;top:0px;right:0px;;width:50px;height:50px;">≡</h1></a>'}
+	    if(window.outerWidth<426){$('#header').css("display","none");document.body.innerHTML+='<a href='javascript:_goto3(\'./hamburger.html\')"><h1 style="text-align:center;background:pink;position:fixed;top:0px;right:0px;;width:50px;height:50px;">≡</h1></a>'}
             await _sleep(1500);
 	    document.getElementById('hide').style.display="block";
             _animation();
