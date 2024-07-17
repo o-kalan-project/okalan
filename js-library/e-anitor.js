@@ -5,6 +5,7 @@ function _tag(where){return document.getElementsByTagName(where)}
 async function _goto(where){$('#hide').fadeOut(300);await _sleep(550);window.location.href=where}
 async function _goto2(where){$('#hide, #prof').fadeOut(300);await _sleep(550);window.location.href=where}
 async function _goto3(where){$('#hide2, #aa').fadeOut(300);await _sleep(550);window.location.href=where}
+async function _goto4(where){$('#hide2, #aa, #text').fadeOut(300);await _sleep(550);window.location.href=where}
 // _appfont('/static/keifont.ttf','keifont');
 function _appfont(pass,family){
     var styleTag = document.createElement('style');
