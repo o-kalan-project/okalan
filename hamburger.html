@@ -7,17 +7,20 @@
     <title>応歌ラン(仮)</title>
     <body style='padding:0px;margin:0px;min-width:auto;'>
         <script src='./js-library/e-anitor.js'></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
           _animation();
           _appfont('./keifont.ttf','keifont');
         </script>
         <div id="text">
-            <div style="text-align: center;background-color: pink;" class="box2"><a href="./updatelog.html" style="color: rgb(255, 255, 255); background-color: pink; font-family: keifont; font-size: 50px;">当キャラクターについて</a></div>
+            <a href="_goto('./updatelog.html')" style="color: rgb(255, 255, 255);font-family: keifont; font-size: 50px;"><div style="text-align: center;background-color: pink;" class="box2">当キャラクターについて</div></a>
         </div>
         <style>
             a {
                 text-decoration: none;
             }
         </style>
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+	    <link rel="stylesheet" type="text/css" href="./css/load.css" />
     </body>
 </html>
