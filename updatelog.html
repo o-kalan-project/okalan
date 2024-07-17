@@ -18,8 +18,8 @@
         window.onload = async function () {
             document.fonts.ready.then(async function (fontFaceSet) {
                 $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=updatelog&kit='+window.navigator.userAgent)}, "jsonp");//自作のライブラリは最強だ!
-                if(window.outerWidth<426){$('#header').css("display","none");}
                 await $('.loader').delay(600).fadeOut(600);
+                if(window.outerWidth<426){$('#header').css("display","none");}
                 await _sleep(1500);
                 document.getElementById('hide').style.display = "block";
                 _animation();
