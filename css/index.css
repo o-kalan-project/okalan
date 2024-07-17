@@ -71,8 +71,7 @@ a {
     text-decoration: none;
 }
 @media screen and (max-width: 480px){
-header {
-    	padding: 30px 4% 10px;
+	header {
 		display:none;
 	}
 }
