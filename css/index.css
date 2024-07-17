@@ -71,11 +71,11 @@ a {
     text-decoration: none;
 }
 @media screen and (max-width: 480px){
-	header {
+	#header {
 		display:none;
 	}
 }
-header {
+#header {
 	padding: 30px 4% 10px;
     	position: fixed;
     	top: 0;
