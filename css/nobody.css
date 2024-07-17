@@ -69,18 +69,6 @@ body {
 a {
     text-decoration: none;
 }
-header {
-    padding: 30px 4% 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    height:50px;
-    bottom:-100;
-    z-index:calc(infinity)
-}
 h2 {
     display: block;
     border: 0;
