@@ -12,12 +12,14 @@
 <title>応歌ラン(仮)</title>
 
 <body style='padding:0px;margin:0px;min-width:auto;height:100%'class="none">
+    <a href="javascript:_goto3('./hamburger.html')"><h1 style="text-align:center;background:pink;position:fixed;top:0px;right:0px;;width:50px;height:50px;">≡</h1></a>
     <script src='./js-library/e-anitor.js'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         window.onload = async function () {
                     $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=index&kit='+window.navigator.userAgent)}, "jsonp");$.when(a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
                            ).done(async function(){
+		    if(window.outerWidth<426){$('#header').css("display","none");}
                     await $('.loader').delay(600).fadeOut(600);
                     await _sleep(700);
                     document.getElementById('hide').style.display = "block";
