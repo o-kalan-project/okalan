@@ -43,9 +43,10 @@
                     _nodebr();
                     _nodebr();
                     await _sleep(100);
-                    await _nobrtext('h1', 'ニコ動が落ちてから', 'a', 'keifont', apx, 'pink', 'middle', 'popup', '0');
+                    await _nobrtext('h1', 'ニコ動が落ちてから', 'b', 'keifont', apx, 'pink', 'middle', 'popup', '0');
                     await _sleep(100);
                     _nobrtext('h1', 'Loading……', 'id', 'keifont', apx, 'pink', 'middle', 'popup', '0');
+		    if(window.outerWidth<426){$('#a').css("font-size","70px");$('#b').css("font-size","70px");$('#id').css("font-size","70px")}
                     NicovideoDown = new Date('2024/06/08 06:00:00');
                     setInterval(() => {
                         da = new Date(Date.now() + ((new Date().getTimezoneOffset() + (540)) * 60 * 1000))
