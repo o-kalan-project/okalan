@@ -22,8 +22,8 @@
 		    $.when(
 			   a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
                     ).done(async function(){
-		    $('.loader').delay(600).fadeOut(600);
 		    await _sleep(700);
+		    $('.loader').delay(600).fadeOut(600);
                     document.getElementById('hide').style.display = "block";
 	    	    if(window.outerWidth<426){$('#header').css("display","none");document.body.innerHTML+='<a href="javascript:_goto3(\'./hamburger.html\')"><h1 style="text-align:center;background:pink;position:fixed;top:0px;right:0px;;width:50px;height:50px;">≡</h1></a>'}
                     //自作のライブラリは最強だ!
