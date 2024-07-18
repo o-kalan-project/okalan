@@ -3,6 +3,10 @@ html,body{
 }
 body{
 	background-color:rgba(0, 77, 25, 0.8);
+	background-image: url('../img/tatie.png');
+	background-blend-mode:darken;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 #tatie{
 	opacity:0.3;
@@ -108,10 +112,7 @@ nav {
     z-index:calc(infinity);
 }
 #backimg {
-	background-image: url('../img/tatie.png');
-	background-blend-mode:darken;
-	background-size: contain;
-	background-repeat: no-repeat;
+	
   }
         @media screen and (max-width: 925px) {
 #backimg {
