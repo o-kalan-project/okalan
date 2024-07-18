@@ -1,6 +1,9 @@
 html,body{
 	height:100%
 }
+body{
+	background-color:rgba(0, 77, 25, 0.8);
+}
 #tatie{
 	opacity:0.3;
             width: 40vw;
@@ -106,21 +109,17 @@ nav {
 }
 #backimg {
 	background-image: url('../img/tatie.png');
-	background-color:rgba(0, 77, 25, 0.8);
 	background-blend-mode:darken;
 	background-size: contain;
 	background-repeat: no-repeat;
-box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
   }
         @media screen and (max-width: 925px) {
 #backimg {
     background-image: url('../img/tatie.png');
-    background-color:rgba(0, 77, 25, 0.8);
     background-blend-mode:darken;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: -5px -5px 1px rgba(0,0,0,0.3);
       }
 }
 #backimg2 {
