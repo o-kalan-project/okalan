@@ -11,7 +11,7 @@
 <title>応歌ラン(仮)</title>
 
 <body style="height:100%;padding:0px;margin:0px;">
-    <a href="javascript:_goto3('./hamburger.html')"><h1 style="text-align:center;background:pink;position:fixed;top:0px;right:0px;width:10vw;height:10vw;font-size:10vw">≡</h1></a>
+    <a id="hum"href="javascript:_goto3('./hamburger.html')"><h1 style="text-align:center;background:pink;position:fixed;top:0px;right:0px;width:10vw;height:10vw;font-size:10vw">≡</h1></a>
     <header id="header">
         <a href="javascript:_goto('./index.html');"><img src='./img/logo.png' width='40%' height='40%' id='nop'></a>
         <nav class="pc-nav">
@@ -29,7 +29,7 @@
         window.onload = async function () {
             await document.fonts.ready.then(async function (fontFaceSet) {
                 $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=utau&kit='+window.navigator.userAgent)}, "jsonp");_animation();
-                if(window.outerWidth<426){$('#header').css("display","none");}
+                if(window.outerWidth<426){$('#header').css("display","none");}else{$('#hum').css("display","none");}
                 _appfont('./keifont.ttf', 'keifont');
                 await _freetext('h1', 'UTAUの配布場所です。', 'a', 'keifont', '30px', 'pink', 'middle', 'popup', '0');
                 await _sleep(100)
