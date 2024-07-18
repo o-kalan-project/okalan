@@ -166,3 +166,13 @@ nav {
     left: 0;
     bottom: 0;
 }
+@media screen and (max-width: 480px){
+    #a{
+	    font-size:10vw
+    }
+}
+@media screen and (max-width: 480px){
+	#id{
+	    font-size:10vw
+	}
+}
