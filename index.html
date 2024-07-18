@@ -33,7 +33,8 @@
                     _nodebr();
                     _nodebr();
                     count=Number(a.responseText)+1
-		    var apx="30px"
+		    apx="30px"
+		    if(window.outerWidth<426){apx="70px"}
                     await _freetext('h1', 'あなたは'+count+'人目の訪問者です', 'a', 'keifont', apx, 'pink', 'middle', 'popup', '0');
                     _nodebr();
                     _nodebr();
