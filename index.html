@@ -18,8 +18,9 @@
     <script>
         window.onload = async function () {
                     $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=index&kit='+window.navigator.userAgent)}, "jsonp");
-		    $.when(a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
-                           ).done(async function(){
+		    $.when(
+			   a=$.post("https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec")
+                    ).done(async function(){
 		　　if(window.outerWidth<426){$('#header').css("display","none");}
                     $('.loader').delay(600).fadeOut(600);
 		    await _sleep(700);
@@ -70,6 +71,7 @@
                     }, 1000)
                         ;
                     });
+	}
                     $(".a").on("mouseover",function(){//$('#hide').fadeOut(500);
                     $(".a").css({
                         color: "#4dc0b2",
