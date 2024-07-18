@@ -38,7 +38,7 @@
                     await _nobrtext('h1', 'あなたは'+count+'人目の訪問者です', 'a', 'keifont', apx, 'pink', 'middle', 'popup', '0');
                     _nodebr();
                     _nodebr();
-                    document.getElementById("text").innerHTML += '<div style="text-align: center;"class="box2"><a href="javascript:goto(\'./updatelog.html\');" style="color: rgb(255, 255, 255); background-color: pink; font-family: keifont; font-size: 50px;">年表</a></div>'
+                    document.getElementById("text").innerHTML += '<div style="text-align: center;"class="box2"><a href="javascript:goto(\'./updatelog.html\');" style="color: rgb(255, 255, 255); background-color: pink; font-family: keifont; font-size: 50px;"id="c">年表</a></div>'
                     _nodebr();
                     _nodebr();
                     _nodebr();
@@ -46,7 +46,7 @@
                     await _nobrtext('h1', 'ニコ動が落ちてから', 'b', 'keifont', apx, 'pink', 'middle', 'popup', '0');
                     await _sleep(100);
                     _nobrtext('h1', 'Loading……', 'id', 'keifont', apx, 'pink', 'middle', 'popup', '0');
-		    if(window.outerWidth<426){$('#a').css("font-size","70px");$('#b').css("font-size","70px");$('#id').css("font-size","70px")}
+		    if(window.outerWidth<426){$('#a').css("font-size","70px");$('#b').css("font-size","70px");$('#c').css("font-size","70px");$('#id').css("font-size","70px")}
                     NicovideoDown = new Date('2024/06/08 06:00:00');
                     setInterval(() => {
                         da = new Date(Date.now() + ((new Date().getTimezoneOffset() + (540)) * 60 * 1000))
