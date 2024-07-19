@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>応歌ラン(仮)</title>
     <body style="height:100%">
-	<a href="javascript:_goto3('./hamburger.html')"><h1 style="text-align:center;background:pink;position:fixed;top:0px;right:0px;width:10vw;height:10vw;font-size:10vw">≡</h1></a>
+	<a href="javascript:_goto3('./hamburger.html')"><h1 style="display:none;text-align:center;background:pink;position:fixed;top:0px;right:0px;width:10vw;height:10vw;font-size:10vw">≡</h1></a>
         <div id="hide"style="display:none">
         <header id="header">
             <a id="hum"href="javascript:_goto3('./index.html');"><img src='./img/logo.png' width='40%' height='40%' id='nop'></a>
@@ -29,7 +29,7 @@
 		_animation();
 		_appfont('./keifont.ttf','keifont');
                 await $('.loader').delay(600).fadeOut(600);
-		if(window.outerWidth<426){$('#header').css("display","none");}else{$('#hum').css("display","none");}
+	    if(window.outerWidth<426){$('#header').css("display","none");$('#hum').css("display","block");}
                 await _sleep(1500);
                 document.getElementById('hide').style.display="block";
 		document.getElementById('hide2').style.display="block";
