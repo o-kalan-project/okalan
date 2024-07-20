@@ -75,7 +75,7 @@ async function _freetext(tag,index,id,font,size,color,pos,animation,delay,where)
 	if(window.outerWidth<426){
 		ina=k[i].replace((' '),('&emsp;'));
         	ina=ina.replace(('_t'),('&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;'));
-        	ina=ina.replace(('_s'),('&emsp;&emsp;'));
+        	ina=ina.replace(('_s'),('&emsp;'));
 	}else{
         	ina=k[i].replace((' '),('&emsp;'));
         	ina=ina.replace(('_t'),('&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;'));
