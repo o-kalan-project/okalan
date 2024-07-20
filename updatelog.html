@@ -19,6 +19,7 @@
             document.fonts.ready.then(async function (fontFaceSet) {
                 $.get("https://ipinfo.io", function(res) {$.get('https://script.google.com/macros/s/AKfycbxMObWemaBrhu_ouZcMPXdhxRqFBT1G-ehV75Cvr0AwBRjoJR4I-z3qftr70bViMzy6/exec?ip='+res.ip+'&where=updatelog&kit='+window.navigator.userAgent)}, "jsonp");//自作のライブラリは最強だ!
                 await $('.loader').delay(600).fadeOut(600);
+		$("#dl").css("transform","scale(1.5,1.5)")
 	    if(window.outerWidth<426){$('#header').css("display","none");$('#hum').css("display","block");}
                 await _sleep(1500);
                 document.getElementById('hide').style.display = "block";
